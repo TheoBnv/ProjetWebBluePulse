@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/carte.css">
+
+
+    <link rel="icon" href="../MEDIA/Logo16x16.png" sizes="16x16">
+    <link rel="icon" href="../MEDIA/Logo32x32.png" sizes="32x32">
+    <link rel="icon" href="../MEDIA/Logo48x48.png" sizes="48x48">
+    
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+    </style>
+
+    <title>Carte interactive des océans</title>
+</head>
+<body>
+    <header>
+            <div id="rectangleLogo">
+                <img id="logoHeader" src="../MEDIA/Logo.png" alt="logo BluePulse">
+            </div>
+
+        <div id="headerText">
+            <a href="accueil.html">Accueil</a>
+            <a href="pollutionMarine.html">Pollution marine</a>
+            <a href="solutions.html">Solutions et actions</a>
+            <a href="menace.html">Espèces menacées</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="apropos.html">À propos</a>
+        </div>
+
+        <a href="carte.html"><img id="mapsHeader" src="../MEDIA/maps.svg" alt="carte du monde"></a>
+    </header>
+
+    <div id="mapContainer">
+        <img src="../MEDIA/carte-du-monde-pays.jpg" alt="Carte du monde" id="worldMap">
+
+        <div class="map-point" style="left: 35%; top: 45%;" data-title="Océan Atlantique" data-info="Grande zone de déchets plastiques."></div>
+        <div class="map-point" style="left: 21%; top: 46%;" data-title="Golfe du Mexique" data-info="Zone morte due à l'eutrophisation."></div>
+        <div class="map-point" style="left: 80%; top: 45%;" data-title="Mer de Chine Orientale" data-info="Pollution industrielle et rejet de métaux lourds."></div>
+        <div class="map-point" style="left: 65%; top: 60%;" data-title="Océan Indien" data-info="Déchets plastiques et produits chimiques des navires."></div>
+        <div class="map-point" style="left: 50%; top: 31%;" data-title="Mer Baltique" data-info="Fortes concentrations de nitrates et phosphates causant des algues toxiques."></div>
+        <div class="map-point" style="left: 50%; top: 40%;" data-title="Mer Méditerranée" data-info="Pollution plastique et hydrocarbures des activités maritimes."></div>
+        <div class="map-point" style="left: 70%; top: 50%;" data-title="Golfe du Bengale" data-info="Rejets industriels et contamination par pesticides."></div>
+        <div class="map-point" style="left: 10%; top: 42%;" data-title="Océan Pacifique Nord" data-info="Grande plaque de déchets flottants (Great Pacific Garbage Patch)."></div>
+        <div class="map-point" style="left: 20%; top: 90%;" data-title="Océan Austral" data-info="Microplastiques et pollution des stations de recherche."></div>
+        <div class="map-point" style="left: 50%; top: 16%;" data-title="Arctique" data-info="Pollution hydrocarbures et accumulation de plastiques."></div>
+
+
+    </div>
+
+    <div id="popup" style="display:none;">
+        <div id="popup-content">
+            <span id="popup-close">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-info"></p>
+        </div>
+    </div>
+    
+    <script src="../JS/carte.js"></script> 
+    <script src="../JS/script.js"></script>
+    <footer>
+        <p>©️2025 BluePulse – Tous droits réservés</p>
+        <a href="apropos.html">À propos</a>
+    </footer>
+</body>
+</html>

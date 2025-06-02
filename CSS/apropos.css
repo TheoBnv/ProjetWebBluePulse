@@ -1,0 +1,27 @@
+#fondAccueilConteneur {
+    width: 100vw;
+    box-sizing: border-box;
+    max-width: 100vw;
+    background-image: url("../MEDIA/Fond/fondAPropos.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section{
+    text-align: center;
+}
+section li, section p, div p{
+    font-size: 20px;
+}
+li{
+    list-style: none;
+}
+h1{
+    font-style: italic;
+    font-size: 3em;
+    color: rgb(120, 34, 201);
+}
+h2{
+    font-size: 2em;
+    color: rgb(14, 14, 185);
+}

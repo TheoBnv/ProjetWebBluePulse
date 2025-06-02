@@ -1,0 +1,109 @@
+#fondAccueilConteneur {
+    width: 100vw;
+    box-sizing: border-box;
+    max-width: 100vw;
+    background-image: url("../MEDIA/Fond/fondEspeces.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.animal.right {
+    position: absolute;
+    top: 15%; 
+    left: 10px;
+    z-index: 2; 
+}
+
+.blueCard.right {
+    margin-left : 20%;
+    width: 75%;
+    height: 80%;
+    background-image: url("../MEDIA/Fond/fondTexteEspeces.jpeg");
+    margin-top: 2.7%;
+    position: relative;
+    z-index: 1; 
+}
+
+.blueCard.left {
+    width: 75%;
+    height: 80%;
+    background-image: url("../MEDIA/Fond/fondTexteEspeces.jpeg");
+    margin-top: 2.7%;
+    position: relative;
+    z-index: 1; 
+}
+
+.blueCard.right p {
+    color: rgba(0, 0, 0, 1);
+    font-family: "Zain";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding : 70px;
+    padding-left: 400px;
+    padding-top : 60px;
+}
+
+.blueCard.left p {
+    color: rgba(0, 0, 0, 1);
+    font-family: "Zain";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding : 70px;
+    padding-right: 400px;
+    padding-top : 60px;
+}
+
+.animal.left {
+    position: absolute;
+    top: 15%; 
+    right: 10px;
+    z-index: 2; 
+}
+
+.animal.left.vertical {
+    top : -20%;
+    right : 30px;
+}
+
+.animal.right.vertical {
+    top : -20%;
+    left : 100px;
+}
+
+
+.blueCard::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: -1;
+}
+
+.Card{
+    position: relative;
+    width: 1500px;
+    height: 450px;
+    margin: auto;
+    margin-bottom: 100px;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.Card .blueCard {
+    border-radius: 20px;
+}
+
+.animal img{
+    height : 90%;
+}
+
+.return {
+    transform : scaleX(-1);
+}

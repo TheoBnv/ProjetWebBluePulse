@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/quiz.css">
+
+
+    <link rel="icon" href="../MEDIA/Logo16x16.png" sizes="16x16">
+    <link rel="icon" href="../MEDIA/Logo32x32.png" sizes="32x32">
+    <link rel="icon" href="../MEDIA/Logo48x48.png" sizes="48x48">
+    
+
+    <style>@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');</style>
+
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+        <div id="rectangleLogo">
+            <img id="logoHeader" src="../MEDIA/Logo.png" alt="logo BluePulse">
+        </div>
+
+        <div id="headerText">
+            <a href="accueil.html">Accueil</a>
+            <a href="pollutionMarine.html">Pollution marine</a>
+            <a href="solutions.html">Solutions et actions</a>
+            <a href="menace.html">Espèces menacées</a>
+            <a href="quiz.html"  id="actualPage">Quiz</a>
+            <a href="apropos.html">À propos</a>
+        </div>
+
+        <a href="carte.html"><img id="mapsHeader" src="../MEDIA/maps.svg" alt="carte du monde"></a>
+
+        
+    </header>
+
+    <script src="../JS/quiz.js" defer></script>
+
+    <div id="fondAccueilConteneur">
+
+        <h2>Quiz - Espèces Menacées</h2>
+
+        <div class="quiz-container">
+            <h3>Appuyez pour commencer !</h3>
+            <p id="question"></p>
+            <div id="options"></div>
+            <p id="explanation"></p>
+            <button onclick="nextQuestion()" >Suivant</button>
+        </div>
+        
+    </div>
+
+
+    <script src="../JS/script.js"></script>
+    
+
+    
+    <footer>
+        <p>©️2025 BluePulse – Tous droits réservés</p>
+        <a href="apropos.html">À propos</a>
+    </footer>
+</body>
+</html>
